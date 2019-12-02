@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Books Store</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Books Store</h1>
+        <table id="books-table">
+            <tr id="books-head">
+                <th>ID</th>
+                <th>Author name</th>
+                <th>Book title</th>
+                <th>ISBN number</th>
+                <th>About book</th>
+                <th>Date added</th>
+                <th>Cover Page</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+        
+        <form id="books-form">
+            <div class="form-group">
+                <label>Author name:</label>
+                <div class="field"><input type="text" name="author_name" class="form-control"/></div>
+            </div>
+            <div class="form-group">
+                <label>Book title:</label>
+                <div class="field"><input type="text" name="book_title" class="form-control"/></div>
+            </div>
+            <div class="form-group">
+                <label>ISBN number:</label>
+                <div class="field"><input type="text" name="isbn_number" class="form-control"/></div>
+            </div>
+            <div class="form-group">
+                <label>About book:</label>
+                <div class="field"><input type="text" name="about_book" class="form-control"/></div>
+            </div>
+           <br>
+            <div class="m-file">
+                <input type="file" class="m-file-input" name="cover_page">
+                <label class="m-file-label" >Select Cover Page:</label>
+                <p id="remove" class="hidden">file selected</p>
+            </div>
+            <br>
+            <input class="btn btn-outline-danger" type="button" id="books-op-discard" value="Discard">
+            <input class="btn btn-outline-primary" type="submit" id="books-op-save" value="Save">
+            <input type="hidden" name="id_formInput" value="0" />
+        </form>
+
+        <div id="preview">
+
+        </div>
+    </div>
+       
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
